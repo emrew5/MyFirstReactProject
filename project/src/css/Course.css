@@ -1,0 +1,111 @@
+.course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .course:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  }
+  
+  .course div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .course img {
+    border-radius: 12px;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course img:hover {
+    transform: scale(1.2) rotate(3deg);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course h4:hover {
+    color: #ff5733;
+    transform: scale(1.1);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .course h5 {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 15px 0;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .course h5:hover {
+    color: #3498db;
+    transform: translateX(5px);
+  }
+  
+  .course h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-out, color 0.4s ease-in-out;
+  }
+  
+  .course h3:hover {
+    color: #e74c3c;
+    transform: scale(1.05) rotate(-3deg);
+  }
+  
+  .course a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #3498db;
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease-out, box-shadow 0.3s ease;
+  }
+  
+  .course a:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .course a:focus {
+    outline: none;
+  }
+  
